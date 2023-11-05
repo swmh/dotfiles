@@ -1,0 +1,11 @@
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+
+import:
+ - ~/.config/alacritty/themes/catppuccin-mocha.yml
+key_bindings:
+    - { key: F11, action: ToggleFullscreen}
+    - { key: Back, mods: Control, chars: "\u0017" }
+

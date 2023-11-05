@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+#Todo if in session change it 
+
+curdir=$(pwd | tr '/' '_') 
+sessions=$(zellij ls) 
+
+zellij attach $curdir -c

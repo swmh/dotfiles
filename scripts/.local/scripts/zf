@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#Todo if in session change it 
+
+curdir=$(pwd) 
+result=$(zellij ls | fzf) 
+if [[ -z "$result" ]]; then
+    exit
+fi
+
+zellij attach $result

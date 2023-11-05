@@ -1,0 +1,7 @@
+# Move the directory to the second line
+format = '''
+$directory$all$character
+'''
+
+[directory]
+truncation_length=20
