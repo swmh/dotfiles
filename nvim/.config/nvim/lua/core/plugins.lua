@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugins
 require("lazy").setup({
+    { 'jidn/vim-dbml' },
     -- Themes
     { 'rebelot/kanagawa.nvim'},
     { 'Shatur/neovim-ayu' },

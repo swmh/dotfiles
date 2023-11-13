@@ -38,6 +38,8 @@ default_border pixel 1
 # font for window titles
 font xft:JetBrainsMono Nerd Font 10
 
+# Suspend
+bindsym --release $mod+Shift+p exec "i3-nagbar -t warning -m 'You pressed the suspend shortcut. Do you really want to suspend?' -B 'Yes, suspend' 'systemctl suspend'"
 
 # Move focused window to scratchpad
 bindsym $mod+Shift+minus move scratchpad

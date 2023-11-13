@@ -15,7 +15,8 @@ if status is-interactive
     set EDITOR /usr/local/bin/nvim
 
     zoxide init --cmd j fish | source
+    source ~/.asdf/asdf.fish
 
-    alias ls "lsd"
+    alias ls "exa --icons"
     krabby random
 end
