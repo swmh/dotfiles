@@ -1,0 +1,34 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+scrolloff = 8
+completion-trigger-len = 0
+# rulers = [98]
+
+# [editor.file-picker]
+# hidden = false
+
+[editor.statusline]
+right = ["diagnostics", "selections", "register","spacer", "position", "spacer", "spacer", "position-percentage", "file-encoding"]
+
+[editor.indent-guides]
+render = true
+# character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.insert]
+C-c = "normal_mode"
+
+[keys.select]
+C-c = "normal_mode"

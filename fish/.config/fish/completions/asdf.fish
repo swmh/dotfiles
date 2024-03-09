@@ -1,0 +1,1 @@
+/home/swmh/.asdf/completions/asdf.fish
