@@ -15,14 +15,14 @@ set $terminal kitty
 include catppuccin-mocha
 
 # Assign
-assign [class="Yandex-browser"] $ws2
+assign [class="firefox"] $ws2
 assign [class="Telegram"] $ws5
 
 # Autostart
 exec --no-startup-id "xrandr --output DP-0 --mode 1440x900 --rate 74.98"
 exec --no-startup-id picom & 
 exec --no-startup-id $terminal
-exec --no-startup-id yandex-browser
+exec --no-startup-id firefox
 exec --no-startup-id telegram-desktop
 
 

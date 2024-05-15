@@ -23,9 +23,13 @@ if status is-interactive
     source ~/.asdf/asdf.fish
 
     alias ls "exa --icons"
-    alias cat "bat"
+    alias cat bat
     alias k="kubectl"
+    alias ocaml="rlwrap ocaml"
 end
 
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/swmh/.ghcup/bin $PATH # ghcup-env
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
+set -gx PATH $HOME/.cabal/bin /home/swmh/.ghcup/bin $PATH # ghcup-env
 
+# opam configuration
+source /home/swmh/.opam/opam-init/init.fish >/dev/null 2>/dev/null; or true

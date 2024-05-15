@@ -57,3 +57,28 @@ kubernetes = "*.yaml"
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
+
+[[language]]
+name = "python"
+language-servers = [ "pyright",  "ruff" ]
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "strict"
+
+[language-server.ruff]
+command = "ruff-lsp"
+
+[language.formatter]
+command = "black"
+args = ["--line-length", "100",  "-"]
+
+[[language-server.typescript-language-server.config]]
+includeInlayParameterNameHints = "all"
+
+[[language]]
+name = "ocaml"
+formatter = { command = "ocamlformat", args = [
+  "-",
+  "--impl",
+  "--enable-outside-detected-project", # Enable only if you want to format files outside of projects
+] }
